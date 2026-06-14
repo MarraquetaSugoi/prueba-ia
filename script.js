@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     formData.append('_captcha', 'false');
 
                     // REEMPLAZA ESTE EMAIL CON EL TUYO
-                    fetch('https://formsubmit.co/ajax/TU_EMAIL_AQUI', {
+                    fetch('https://formsubmit.co/ajax/joacooli1234@gmail.com', {
                         method: 'POST',
                         body: formData
                     })
