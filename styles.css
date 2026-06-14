@@ -1,0 +1,61 @@
+/* Custom Animations and Utilities */
+
+.reveal-fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal-fade-up.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animation-delay-200 {
+    transition-delay: 200ms;
+}
+
+.animation-delay-300 {
+    transition-delay: 300ms;
+}
+
+.animation-delay-400 {
+    transition-delay: 400ms;
+}
+
+.animation-delay-2000 {
+    animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+    animation-delay: 4s;
+}
+
+/* FAQ Accordion Styles */
+.faq-item.active .faq-answer {
+    display: block;
+    animation: slideDown 0.3s ease-out;
+}
+
+.faq-item.active i {
+    transform: rotate(45deg);
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Glassmorphism utility */
+.glass {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
